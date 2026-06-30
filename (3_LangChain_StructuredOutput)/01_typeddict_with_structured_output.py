@@ -10,7 +10,7 @@ load_dotenv()  # Load environment variables from .env file
 
 llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen2.5-7B-Instruct",
-    temperature=0.7,
+    task="text-generation"
 )
 model = ChatHuggingFace(llm=llm)
 
