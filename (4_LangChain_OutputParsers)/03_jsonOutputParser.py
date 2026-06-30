@@ -1,4 +1,6 @@
 # Cons: Don't enforce schema of output(LLM sends result according to own structure)
+# Pros: Easy to use and gives correct json format
+
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
