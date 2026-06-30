@@ -18,6 +18,8 @@ prompt2 = PromptTemplate(
 # Define the model
 llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen2.5-7B-Instruct",
+    # repo_id="meta-llama/Llama-3.3-70B-Instruct",
+    # repo_id="meta-llama/Llama-3.1-70B-Instruct",
     task="text-generation",
     timeout=300,      # 5 minutes
     max_new_tokens=100,
